@@ -1,0 +1,61 @@
+[
+    {
+        "id": "1",
+        "name": "Americano",
+        "imageUrl": "https://images.unsplash.com/photo-1589224637274-2a30864d41b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        "ingredients": [
+            "1 1/4 Tazas de agua caliente",
+            "2 Shots de espresso"
+        ],
+        "details": "Es un básico de Stella café por una buena razón."
+    },
+    {
+        "id": "2",
+        "name": "Moka",
+        "imageUrl": "https://images.unsplash.com/photo-1581701663554-291c6c9e56d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+        "ingredients": [
+            "1 Taza de agua caliente",
+            "15g café molido medio"
+        ],
+        "details": "Si te gusta el café fuerte, utilizamos una Moka, la forma más sencilla de preparar una taza de café potente"
+    },
+    {
+        "id": "3",
+        "name": "Latte Machiatto",
+        "imageUrl": "https://images.unsplash.com/photo-1497015901858-7ed9c4e3ff0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+        "ingredients": [
+            "1 shot de espresso",
+            "3/4 tazas de leche a elección"
+        ],
+        "details": "Es un café rubio ligeramente tostado, pero lleno de sabor. Agregando un poco de leche espumosa obtenemos un delicioso macchiato."
+    },
+    {
+        "id": "4",
+        "name": "Flat white",
+        "imageUrl": "https://images.unsplash.com/photo-1486482044844-888b371f410c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "ingredients": [
+            "2 shots de espresso",
+            "3/4 tazas de leche a elección",
+            "1 pizca de canela molida",
+            "1 pizca de nuez moscada molida",
+            "1 pizca de jengibre molido",
+            "1 pizca de pimienta molida"
+        ],
+        "details": "Un delicioso café especiado. Tomá el primer trago y disfrutá. También espolvorearemos un poco de canela en el tope, y te sentiras extra elegante."
+    },
+    {
+        "id": "5",
+        "name": "Caramel Latte Helado con crema de Vainilla",
+        "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "ingredients": [
+            "2 shots de espresso",
+            "1/2 taza de crema para batir",
+            "1 cucharadita de azúcar granulada",
+            "1 cucharadita de esencia de vainilla",
+            "1 cucharada de salsa de caramelo",
+            "1/2 cucharada de azúcar morena",
+            "Cubos de hielo"
+        ],
+        "details": "El caramelo suave y el rico espresso cubierto con crema de vainilla se combinan para crear un café frío que es simplemente perfecto."
+    }
+]

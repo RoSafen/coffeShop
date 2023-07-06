@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "texto";
+    src: url(../fonts/GothicA1-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "titulo";
+    src: url(../fonts/GothicA1-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "subtitulo";
+    src: url(../fonts/GothicA1-Medium.ttf);
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-size: 10px;
+}
+
+.contenedor {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto;
+    grid-template-rows: 10em auto auto auto 10em;
+    grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "sidebar2"
+        "footer";
+}
+
+.media {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #F2EAD3;
+    color: #321313;
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #321313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #F4991A;
+    color: #321313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "titulo";
+    font-size: 3em;
+}
+
+.bebidas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "subtitulo";
+    font-size: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    text-transform: uppercase;
+
+    & :hover {
+        color: #F2EAD3;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color: #F4991A;
+    color: #321313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;
+    perspective: 700px;
+}
+
+.sidebar2 h1 {
+    font-family: "pacifico";
+    font-size: 3em;
+}
+
+.sidebar2 h2 {
+    font-family: "titulo";
+    font-size: 1em;
+}
+
+.sidebar2 span {
+    font-family: "subtitulo";
+    font-size: 1em
+}
+
+.sidebar2 img {
+    width: 9em;
+}
+
+.map {
+    animation: rotar 5s linear infinite;
+}
+
+.map:hover {
+    cursor: pointer;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(180deg)
+    }
+
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+@media (min-width: 600px) {
+    .contenedor {
+        grid-template-columns: 250px auto;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "header header"
+            "main sidebar"
+            "main sidebar"
+            "sidebar2 sidebar2"
+            "footer footer";
+    }
+    .bebidas {
+        font-size: 1.5em;
+        padding-bottom: 1em;
+    }
+    .sidebar2 h1 {
+        font-size: 4em;
+    }
+    
+    .sidebar2 h2 {
+        font-size: 2em;
+    }
+    .sidebar2 span {
+        font-size: 1.5em
+    }
+}
+    
+@media (min-width: 900px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        margin-right: auto;
+        margin-left: auto;
+        grid-template-areas:
+            "header header header"
+            "sidebar main sidebar2"
+            "sidebar main sidebar2"
+            "footer footer footer";
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #F4991A;
+        font-family: "titulo";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bebidas {
+        font-size: 1.8em;
+        padding-bottom: 1.2em;
+    }
+
+    .sidebar2 img {
+        width: 200px;
+    }
+
+    .titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "titulo";
+        font-size: 5em;
+    }
+    .sidebar2 h1 {
+        font-size: 5em;
+    }
+    
+    .sidebar2 h2 {
+        font-size: 3em;
+    }
+    .sidebar2 span {
+        font-size: 1.5em
+    }
+}
