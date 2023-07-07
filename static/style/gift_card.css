@@ -50,8 +50,8 @@ body {
 }
 
 .sidebar img {
-   width:auto;
    height: 100%;
+   width: auto;
 }
 
 .contenedor{
@@ -77,6 +77,7 @@ body {
    height: 80%;
    width: 80%;
 }
+
 .obligatorio {
    color: #F2EAD3;
 }
@@ -86,12 +87,13 @@ body {
    justify-content: space-between;
    align-items: center;
    flex-direction: row;
-   min-width: 300px;
+   min-width: 250px;
 }
+
 label {
    color: #321313;
    font-family: "subtitulo";
-
+   font-size: 1.5em;
 }
 
 select {
@@ -159,7 +161,7 @@ input {
 
    }
    .sidebar h1 {
-      padding: 100px;
+      padding: 70px;
       font-size: 40px;
    }
    .sidebar img {
@@ -167,7 +169,7 @@ input {
       height: auto;
    }
    .contenedor {
-      font-size: 20px;
+      font-size: 15px;
    }
    
 

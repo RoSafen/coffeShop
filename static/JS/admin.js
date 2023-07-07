@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"http://127.0.0.1:5000/admin",
+        url:"https://rocioriveros.pythonanywhere.com/admin",
         cards:[],
         error:false,
         cargando:true
@@ -30,7 +30,7 @@ const { createApp } = Vue
 
 
         eliminar(card) {
-            const url = 'http://localhost:5000/admin/' + card;
+            const url = 'https://rocioriveros.pythonanywhere.com/admin/' + card;
             var options = {
                 method: 'DELETE',
             }

@@ -13,7 +13,7 @@ function guardar() {
         mensaje,
     }
 
-    let url = "http://localhost:5000/admin"
+    let url = "https://rocioriveros.pythonanywhere.com/admin"
     var options = {
         body: JSON.stringify(card),
         method: 'POST',

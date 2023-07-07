@@ -5,7 +5,7 @@ const { createApp} = Vue
 const vueCard = createApp({
     data() {
         return {
-            url:"http://127.0.0.1:5000/admin",
+            url:"https://rocioriveros.pythonanywhere.com/admin",
             card,
             error:false,
             cargando: true

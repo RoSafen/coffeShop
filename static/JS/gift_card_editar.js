@@ -26,7 +26,7 @@ function modificar() {
     let id = document.getElementById("id").value
     let valor = parseInt(document.getElementById("valor").value)
     let nombre_receptor = document.getElementById("nombre_receptor").value
-    let nombre_emisor = document.getElementById("nombre_editor").value
+    let nombre_emisor = document.getElementById("nombre_emisor").value
     let mail = document.getElementById("mail").value
     let mensaje = document.getElementById("mensaje").value
 
@@ -39,9 +39,9 @@ function modificar() {
         mensaje,
     }
 
-    let url = "http://localhost:5000/admin/"+id
+    let url = "https://rocioriveros.pythonanywhere.com/admin/"+id
 
-    const options = {
+    var options = {
         body: JSON.stringify(card),
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -51,7 +51,7 @@ function modificar() {
         .then(function () {
             console.log("modificado")
             alert("Registro modificado")
-            window.location.href = "./admin.html";  
+            window.location.href = "./gift_card_vista.html?"+card.id;
         //NUEVO,  si les da error el fetch  comentar esta linea que puede dar error  
         })
         .catch(err => {
