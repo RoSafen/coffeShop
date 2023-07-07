@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/711d651682.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style/header.css">
+    <link rel="stylesheet" href="../static/style/index.css">
+    <link rel="stylesheet" href="../static/style/footer.css">
+    <title>Stella cafe</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header class="header">
+
+            <a class="transicion" href="../templates/index.html">
+                <img class="logo" src="../static/img/photo-output (1).png" s alt="Cafe Stella">
+            </a>
+
+            <div class="icons_head">
+
+                <a class="transicion" href="../templates/gift_card_form.html">
+                    <div class="enlaces">
+                        <i class="fa-solid fa-gift"></i>
+                        <span>GIFT CARD</span>
+                    </div>
+                </a>
+
+                </a>
+                <a class="transicion" href="../templates/contacto_.html">
+                    <div class="enlaces">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>COMUNICATE</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+        <article class="main">
+            <video class="media" src="../static/img/coffee video.mp4" autoplay muted loop></video>
+        </article>
+
+        <aside class="sidebar">
+
+            <h1 class="titulo">MENU</h1>
+
+            <div id="menu">
+                <h1 v-if="cargando">Cargando...</h1>
+                <ul v-else>
+                    <li class="bebidas" v-for="bebida in bebidas">
+                        <a :href="'./menu.html?'+bebida.id">{{bebida.name}}</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <aside class="sidebar2">
+
+            <h1>Expo café</h1>
+            <h2>ARGENTINA 2023</h2>
+
+            <div class="map">
+                <a href="acercate.html">
+                    <img src="../static/img/Expo.PNG" alt="">
+                </a>
+            </div>
+            <span class="map">ACERCATE</span>
+
+        </aside>
+
+        <footer class="footer">
+            <h3>SIGUENOS</h3>
+            <div class="icons_foot">
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><i
+                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://ar.pinterest.com/" target="_blank"><i class="fa fa-pinterest"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+            </div>
+            <p>&#169 2023 - Stella café - Todos los derechos reservados</p>
+
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../static/JS/carga.js"></script>
+
+</body>
+
+</html>

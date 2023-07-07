@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/711d651682.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style/header.css">
+
+    <link rel="stylesheet" href="../static/style/footer.css">
+    <title>Gift Card</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="header">
+
+            <a class="transicion" href="../templates/index.html">
+                <img class="logo" src="../static/img/photo-output (1).png" s alt="Cafe Stella">
+            </a>
+
+            <div class="icons_head">
+
+                <a class="transicion" href="../templates/gift_card_form.html">
+                    <div class="enlaces">
+                        <i class="fa-solid fa-gift"></i>
+                        <span>GIFT CARD</span>
+                    </div>
+                </a>
+
+                </a>
+                <a class="transicion" href="../templates/contacto_.html">
+                    <div class="enlaces">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>COMUNICATE</span>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+        <main class="contenedor">
+
+            <div id="app" class="container">
+                <br>
+                <h1>Gift Cards solicitadas</h1>
+                <!--Boton nuevo (Azul)-->
+                <a class="btn btn-primary" href="gift_card_form.html">Nuevo</a>
+
+                <section v-if="error">Lo sentimos se produjo un error</section>
+                <section v-else>
+                    <section v-if="cargando">
+                        <div class="spinner-border"></div>
+                        <p>Cargando .....</p>
+
+                    </section>
+                    <section v-else>
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">Valor</th>
+                                        <th scope="col">Nombre_receptor</th>
+                                        <th scope="col">Nombre_emisor</th>
+                                        <th scope="col">Mail</th>
+                                        <th scope="col">Mensaje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="card in cards" class="">
+                                        <td scope="row">{{card.id}}</td>
+                                        <td>{{card.valor}}</td>
+                                        <td>{{card.nombre_receptor}}</td>
+                                        <td>{{card.nombre_emisor}}</td>
+                                        <td>{{card.mail}}</td>
+                                        <td>{{card.mensaje}}</td>
+                             
+                                        <td>
+                                            <button type="button" class="btn btn-danger" v-on:click="eliminar(card.id)">Eliminar</button>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>
+            </div>
+    </div>
+
+    </main>
+
+    <footer class="footer">
+        <h3>SIGUENOS</h3>
+        <div class="icons_foot">
+            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://ar.pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p>&#169 2023 - Stella café - Todos los derechos reservados</p>
+
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="../static/JS/admin.js"></script>
+</body>
+
+
+</html>
