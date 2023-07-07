@@ -93,6 +93,7 @@
                              
                                         <td>
                                             <button type="button" class="btn btn-danger" v-on:click="eliminar(card.id)">Eliminar</button>
+                                            <a class="btn btn-primary" :href="'gift_card_editar.html?id='+ card.id +'&valor=' + card.valor + '&nombre_receptor=' + card.nombre_receptor +'&nombre_emisor=' + card.nombre_emisor + '&mail=' + card.mail + '&mensaje=' + card.mensaje">Editar</a>
 
                                         </td>
                                     </tr>
